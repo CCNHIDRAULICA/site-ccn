@@ -59,7 +59,17 @@
 <section id="portfolio">
   <h2>Portfólio</h2>
   <p>Confira alguns dos nossos trabalhos realizados:</p>
-  <div class="image-gallery">
+  <div class=".image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.image-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
     <img src="portfolio1.jpg" alt="Serviço 1">
     <img src="portfolio2.jpg" alt="Serviço 2">
     <img src="portfolio3.jpg" alt="Serviço 3">
@@ -77,9 +87,6 @@
     <img src="portfolio15.jpg" alt="Serviço 15">
     <img src="portfolio16.jpg" alt="Serviço 16">
     <img src="portfolio17.jpg" alt="Serviço 17">
-    <img src="portfolio18.jpg" alt="Serviço 18">
-    <img src="portfolio19.jpg" alt="Serviço 19">
-    <img src="portfolio20.jpg" alt="Serviço 20">
     <!-- Adicione mais imagens conforme necessário -->
   </div>
 </section>
