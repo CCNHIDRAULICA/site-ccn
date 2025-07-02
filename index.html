@@ -90,30 +90,27 @@
   <p><strong>WhatsApp:</strong> (11) 2956-0920</p>
   <p><strong>Email:</strong> contato@ccnhidraulicausinagem.com.br</p>
 
-  <h3>Solicite um orçamento</h3>
-<form action="https://formspree.io/f/mnnvrpoj" method="POST">
+  <form action="https://formspree.io/f/mnnvrpoj" method="POST">
 
-  <!-- redirecionamento via campo _next (funciona no plano grátis) -->
-  <input type="hidden" name="_next" value="https://www.ccnhidraulicausinagem.com.br/obrigado.html">
+<!-- CAMPO OCULTO DE REDIRECIONAMENTO -->
+<input type="hidden" name="_redirect" value="https://www.ccnhidraulicausinagem.com.br/obrigado.html">
 
-  <!-- campo para proteger contra bots -->
-  <input type="text" name="_gotcha" style="display:none">
+<!-- CAMPOS DO FORMULÁRIO -->
+<label for="nome">Nome:</label><br>
+<input type="text" id="nome" name="nome" required><br><br>
 
-  <label for="nome">Nome:</label><br>
-  <input type="text" id="nome" name="nome" required><br><br>
+<label for="email">E-mail:</label><br>
+<input type="email" id="email" name="email" required><br><br>
 
-  <label for="email">E-mail:</label><br>
-  <input type="email" id="email" name="email" required><br><br>
+<label for="telefone">Telefone:</label><br>
+<input type="tel" id="telefone" name="telefone"><br><br>
 
-  <label for="telefone">Telefone:</label><br>
-  <input type="tel" id="telefone" name="telefone"><br><br>
+<label for="mensagem">Mensagem:</label><br>
+<textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
 
-  <label for="mensagem">Mensagem:</label><br>
-  <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
-
-  <button type="submit">Enviar</button>
+<button type="submit">Enviar</button>
 </form>
-
+  
 </form>
   
 </section>
