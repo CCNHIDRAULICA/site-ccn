@@ -93,10 +93,10 @@
   <h3>Solicite um orçamento</h3>
 <form action="https://formspree.io/f/mnnvrpoj" method="POST">
 
-  <!-- Redirecionamento após envio -->
-  <input type="hidden" name="_redirect" value="https://www.ccnhidraulicausinagem.com.br/obrigado.html">
+  <!-- redirecionamento via campo _next (funciona no plano grátis) -->
+  <input type="hidden" name="_next" value="https://www.ccnhidraulicausinagem.com.br/obrigado.html">
 
-  <!-- Proteção contra bots -->
+  <!-- campo para proteger contra bots -->
   <input type="text" name="_gotcha" style="display:none">
 
   <label for="nome">Nome:</label><br>
