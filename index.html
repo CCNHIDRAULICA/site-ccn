@@ -91,10 +91,13 @@
   <p><strong>Email:</strong> contato@ccnhidraulicausinagem.com.br</p>
 
   <h3>Solicite um orçamento</h3>
-  <form action="https://formspree.io/f/mnnvrpoj" method="POST">
- 
-  <!-- redireciona para obrigado.html após envio -->
+<form action="https://formspree.io/f/mnnvrpoj" method="POST">
+
+  <!-- Redirecionamento após envio -->
   <input type="hidden" name="_redirect" value="https://www.ccnhidraulicausinagem.com.br/obrigado.html">
+
+  <!-- Proteção contra bots -->
+  <input type="text" name="_gotcha" style="display:none">
 
   <label for="nome">Nome:</label><br>
   <input type="text" id="nome" name="nome" required><br><br>
@@ -109,6 +112,8 @@
   <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
 
   <button type="submit">Enviar</button>
+</form>
+
 </form>
   
 </section>
