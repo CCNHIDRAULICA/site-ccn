@@ -148,23 +148,40 @@
   <h2>Portfólio</h2>
   <p>Confira alguns dos nossos trabalhos realizados:</p>
   <div class="image-gallery">
-    <a href="portfolio1.jpg" data-lightbox="galeria" data-title="Serviço 1"><img src="portfolio1.jpg" alt="Serviço 1"></a>
-    <a href="portfolio2.jpg" data-lightbox="galeria" data-title="Serviço 2"><img src="portfolio2.jpg" alt="Serviço 2"></a>
-    <a href="portfolio3.jpg" data-lightbox="galeria" data-title="Serviço 3"><img src="portfolio3.jpg" alt="Serviço 3"></a>
-    <a href="portfolio4.jpg" data-lightbox="galeria" data-title="Serviço 4"><img src="portfolio4.jpg" alt="Serviço 4"></a>
-    <a href="portfolio5.jpg" data-lightbox="galeria" data-title="Serviço 5"><img src="portfolio5.jpg" alt="Serviço 5"></a>
-    <a href="portfolio6.jpg" data-lightbox="galeria" data-title="Serviço 6"><img src="portfolio6.jpg" alt="Serviço 6"></a>
-    <a href="portfolio7.jpg" data-lightbox="galeria" data-title="Serviço 7"><img src="portfolio7.jpg" alt="Serviço 7"></a>
-    <a href="portfolio8.jpg" data-lightbox="galeria" data-title="Serviço 8"><img src="portfolio8.jpg" alt="Serviço 8"></a>
-    <a href="portfolio9.jpg" data-lightbox="galeria" data-title="Serviço 9"><img src="portfolio9.jpg" alt="Serviço 9"></a>
-    <a href="portfolio10.jpg" data-lightbox="galeria" data-title="Serviço 10"><img src="portfolio10.jpg" alt="Serviço 10"></a>
-    <a href="portfolio11.jpg" data-lightbox="galeria" data-title="Serviço 11"><img src="portfolio11.jpg" alt="Serviço 11"></a>    
-    <a href="portfolio12.jpg" data-lightbox="galeria" data-title="Serviço 12"><img src="portfolio12.jpg" alt="Serviço 12"></a>
-    <a href="portfolio13.jpg" data-lightbox="galeria" data-title="Serviço 13"><img src="portfolio13.jpg" alt="Serviço 13"></a>
-    <a href="portfolio14.jpg" data-lightbox="galeria" data-title="Serviço 14"><img src="portfolio14.jpg" alt="Serviço 14"></a>
-    <a href="portfolio15.jpg" data-lightbox="galeria" data-title="Serviço 15"><img src="portfolio15.jpg" alt="Serviço 15"></a>
-    <a href="portfolio16.jpg" data-lightbox="galeria" data-title="Serviço 16"><img src="portfolio16.jpg" alt="Serviço 16"></a>
-    <a href="portfolio17.jpg" data-lightbox="galeria" data-title="Serviço 17"><img src="portfolio17.jpg" alt="Serviço 17"></a>
+    <a href="portfolio1.jpg" data-lightbox="galeria" data-title="Serviço 1"><img src="portfolio1.jpg" alt="Serviço 1">
+    </a>
+    <a href="portfolio2.jpg" data-lightbox="galeria" data-title="Serviço 2"><img src="portfolio2.jpg" alt="Serviço 2">
+    </a>
+    <a href="portfolio3.jpg" data-lightbox="galeria" data-title="Serviço 3"><img src="portfolio3.jpg" alt="Serviço 3">
+    </a>
+    <a href="portfolio4.jpg" data-lightbox="galeria" data-title="Serviço 4"><img src="portfolio4.jpg" alt="Serviço 4">
+    </a>
+    <a href="portfolio5.jpg" data-lightbox="galeria" data-title="Serviço 5"><img src="portfolio5.jpg" alt="Serviço 5">
+    </a>
+    <a href="portfolio6.jpg" data-lightbox="galeria" data-title="Serviço 6"><img src="portfolio6.jpg" alt="Serviço 6"
+                                                                              ></a>
+    <a href="portfolio7.jpg" data-lightbox="galeria" data-title="Serviço 7"><img src="portfolio7.jpg" alt="Serviço 7">
+    </a>
+    <a href="portfolio8.jpg" data-lightbox="galeria" data-title="Serviço 8"><img src="portfolio8.jpg" alt="Serviço 8">
+    </a>
+    <a href="portfolio9.jpg" data-lightbox="galeria" data-title="Serviço 9"><img src="portfolio9.jpg" alt="Serviço 9">
+    </a>
+    <a href="portfolio10.jpg" data-lightbox="galeria" data-title="Serviço 10"><img src="portfolio10.jpg" alt="Serviço 10">
+    </a>
+    <a href="portfolio11.jpg" data-lightbox="galeria" data-title="Serviço 11"><img src="portfolio11.jpg" alt="Serviço 11">
+    </a>    
+    <a href="portfolio12.jpg" data-lightbox="galeria" data-title="Serviço 12"><img src="portfolio12.jpg" alt="Serviço 12">
+    </a>
+    <a href="portfolio13.jpg" data-lightbox="galeria" data-title="Serviço 13"><img src="portfolio13.jpg" alt="Serviço 13">
+    </a>
+    <a href="portfolio14.jpg" data-lightbox="galeria" data-title="Serviço 14"><img src="portfolio14.jpg" alt="Serviço 14"
+                                                                                ></a>
+    <a href="portfolio15.jpg" data-lightbox="galeria" data-title="Serviço 15"><img src="portfolio15.jpg" alt="Serviço 15">
+    </a>
+    <a href="portfolio16.jpg" data-lightbox="galeria" data-title="Serviço 16"><img src="portfolio16.jpg" alt="Serviço 16"
+                                                                                ></a>
+    <a href="portfolio17.jpg" data-lightbox="galeria" data-title="Serviço 17"><img src="portfolio17.jpg" alt="Serviço 17">
+    </a>
   </div>
 </section>
 
@@ -221,7 +238,16 @@
 </footer>
 
 <!-- Lightbox2 JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
 
+  <!-- Configuração do Lightbox -->
+  <script>
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
+  });
+</script>
+
+  
 </body>
 </html>
