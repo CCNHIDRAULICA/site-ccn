@@ -136,16 +136,17 @@
 <section id="servicos">
   <h2>Serviços</h2>
   <ul>
-    <li><a href="#" onclick="abrirModal('patins-inferior')">Patins inferior</a></li>
-    <li><a href="#" onclick="abrirModal('patins-superior')">Patins superior</a></li>
-    <li><a href="#" onclick="abrirModal('tranca-manual')">Tranca manual</a></li>
+    <li><a href="#" onclick="abrirModal('sapata-inferior')">Sapata inferior</a></li>
+    <li><a href="#" onclick="abrirModal('sapata-superior')">Sapata superior</a></li>
+    <li><a href="#" onclick="abrirModal('Fechadura-da-porta-traseira')">Fechadura da porta traseira</a></li>
     <li><a href="#" onclick="abrirModal('Kit-de-vedação-do-cilindro')">Kit de vedação do cilindro</a></li>
-    <li><a href="#" onclick="abrirModal('Pino-do-patins-superior')">Pino do patins superior</a></li>
+    <li><a href="#" onclick="abrirModal('Pino-da-sapata-superior')">Pino da sapata superior</a></li>
+    <li><a href="#" onclick="abrirModal('Pino-da-sapata-inferior')">Pino da sapata inferior</a></li>
     <li><a href="#" onclick="abrirModal('Reforma-de-cilindros-hidráulicos')">Reforma de cilindros hidráulicos</a></li>
-    <li><a href="#" onclick="abrirModal('Usinagem-de-pinos-fresados')">Usinagem de pinos fresados</a></li>
-    <li><a href="#" onclick="abrirModal('Usinagem-em-geral')">Usinagem em geral</a></li>
-    <li><a href="#" onclick="abrirModal('Peças-de-reposição-para-coletor-compactador')">Peças de reposição para coletor compactador</a></li>
-    <li><a href="#" onclick="abrirModal('Fabricação-e-manutenção-de-componentes-industriais-conforme-amostra')">Fabricação e manutenção de componentes industriais conforme amostra</a></li>
+    <li><a href="#" onclick="abrirModal('Fabricação-de-peças-usinadas')">Fabricação de peças usinadas</a></li>
+    <li><a href="#" onclick="abrirModal('Trava-da-porta-compactador-mikro')">Trava da porta compactador mikro</a></li>
+    <li><a href="#" onclick="abrirModal('Patim-ejetor-mikro')">Patim ejetor mikro</a></li>
+    <li><a href="#" onclick="abrirModal('Base-da-sapata')">Base da sapata</a></li>
     <!-- Adicione mais conforme necessário -->
   </ul>
 </section>
@@ -198,55 +199,60 @@
 <script>
   function abrirModal(servico) {
     const conteudo = {
-      'patins-inferior': `
-        <h3>Patins Inferior</h3>
-        <p>Componente utilizado na base do cilindro para garantir alinhamento e reduzir o desgaste por atrito.</p>
-        <p>Aplicação comum: sistemas hidráulicos de caminhões compactadores e prensas industriais.</p>
+      'sapata-inferior': `
+        <h3>Sapata inferior</h3>
+        <p>Componente de um furo utilizado no painel compactador.</p>
+        <p>Aplicação comum: Componente que se aplica em painel compactadores de caminhões coletores.</p>
       `,
-      'patins-superior': `
-        <h3>Patins Superior</h3>
-        <p>Faz par com o patins inferior, garantindo o movimento guiado e firme do cilindro hidráulico.</p>
-        <p>Aplicação: Máquinas industriais de prensagem, coleta e compactação.</p>
+      'sapata-superior': `
+        <h3>Sapata Superior</h3>
+        <p>Componente de dois furos utilizado no painel compactador.</p>
+        <p>Aplicação: Componente que se aplica em painel compactadores de caminhões coletores.</p>
       `,
-      'tranca-manual': `
-        <h3>Tranca Manual</h3>
-        <p>Mecanismo de segurança para travar peças móveis ou basculantes.</p>
-        <p>Uso comum: sistemas de caçamba, braços articulados e portas de acesso industrial.</p>
+      'Fechadura-da-porta-traseira': `
+        <h3>Fechadura da porta traseira</h3>
+        <p>Mecanismo de segurança para travar a porta traseira do compactador.</p>
+        <p>Uso comum: Componente utilizado para travar o painel traseiro do compactador.</p>
       `,
       'Kit-de-vedação-do-cilindro': `
         <h3>Kit de vedação do cilindro</h3>
-        <p> SEM DESCRIÇÂO</p>
-        <p>Uso comum: SEM DESCRIÇÂO</p>
+        <p> Componente de vedação, para vedar o óleo no sistema hidráulico</p>
+        <p>Uso comum: Cilindros Hidráulicos, macacos e prensas.</p>
       `,
-      'Pino-do-patins-superior': `
-        <h3>Pino do patins superior</h3>
-        <p>SEM DESCRIÇÂO</p>
-        <p>Uso comum: SEM DESCRIÇÂO</p>
+      'Pino-da-sapata-superior': `
+        <h3>Pino da sapata superior</h3>
+        <p>Componente pino de aço temperado sob medida de acordo com cada compactador.</p>
+        <p>Uso comum: Componente utilizado na fixação da sapata de dois (2) furos.</p>
       `,
+      'Pino-da-sapata-inferior': `
+        <h3>Pino da sapata inferior</h3>
+        <p>Componente pino de aço temperado sob medida de acordo com cada compactador.</p>
+        <p>Uso comum: Componente utilizado na fixação da sapata de um (1) furo.</p>
+      `
       'Reforma-de-cilindros-hidráulicos': `
         <h3>Reforma de cilindros hidráulicos</h3>
-        <p>SEM DESCRIÇÂO</p>
-        <p>Uso comum: SEM DESCRIÇÂO</p>
+        <p>Sob avaliação de acordo com o que será necessário realizar no componente.</p>
+        <p>Uso comum:Utilizado em painéis compactadores, prensas e diversos locais.</p>
       `,
-      'Usinagem-de-pinos-fresados': `
-        <h3>Usinagem de pinos fresados</h3>
-        <p>SEM DESCRIÇÂO</p>
-        <p>Uso comum: SEM DESCRIÇÂO</p>
+      'Fabricação-de-peças-usinadas': `
+        <h3>Fabricação de peças usinadas</h3>
+        <p>A fabricação é realizada com as amostras ou desenho.</p>
+        <p>Uso comum: Pinos, buchas, engrenagens, mancais...</p>
       `,
-      'Usinagem-em-geral': `
-        <h3>Usinagem em geral</h3>
-        <p>SEM DESCRIÇÂO</p>
-        <p>Uso comum: SEM DESCRIÇÂO</p>
+      'Trava-da-porta-compactador-mikrol': `
+        <h3>Trava da porta compactador mikro</h3>
+        <p> Trava de segurança de aço.</p>
+        <p>Uso comum: Utilizado no compactador mikro (direito e esquerdo).</p>
       `,
-      'Peças-de-reposição-para-coletor-compactador': `
-        <h3>Peças de reposição para coletor compactador</h3>
-        <p>SEM DESCRIÇÂO</p>
-        <p>Uso comum: SEM DESCRIÇÂO</p>
+      'Patim-ejetor-mikro': `
+        <h3>Patim ejetor mikro</h3>
+        <p> Quadro ou redondo.</p>
+        <p>Uso comum: É utilizado no escudo compactador mikro.</p>
       `,
-      'Fabricação-e-manutenção-de-componentes-industriais-conforme-amostra': `
-        <h3>Fabricação e manutenção de componentes industriais conforme amostra</h3>
-        <p>SEM DESCRIÇÂO</p>
-        <p>Uso comum: SEM DESCRIÇÂO</p>
+      'Base-da-sapata': `
+        <h3>Base da sapata</h3>
+        <p>Componente feito com nylon. Medida: 25x80x300</p>
+        <p>Uso comum: Utilizado na sapata superior/inferior.</p>
       `
       // Você pode adicionar mais aqui
     };
