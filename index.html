@@ -136,10 +136,10 @@
 <section id="servicos">
   <h2>Serviços</h2>
   <ul>
-    <li><a href="#" onclick="abrirModal('sapata-inferior')">Sapata inferior</a></li>
-    <li><a href="#" onclick="abrirModal('sapata-superior')">Sapata superior</a></li>
+    <li><a href="#" onclick="abrirModal('Sapata-inferior')">Sapata inferior</a></li>
+    <li><a href="#" onclick="abrirModal('Sapata-superior')">Sapata superior</a></li>
     <li><a href="#" onclick="abrirModal('Fechadura-da-porta-traseira')">Fechadura da porta traseira</a></li>
-    <li><a href="#" onclick="abrirModal('Kit-de-vedação-do-cilindro')">Kit de vedação do cilindro</a></li>
+    <li><a href="#" onclick="abrirModal('Kit-de-vedação-para-cilindro')">Kit de vedação para cilindro</a></li>
     <li><a href="#" onclick="abrirModal('Pino-da-sapata-superior')">Pino da sapata superior</a></li>
     <li><a href="#" onclick="abrirModal('Pino-da-sapata-inferior')">Pino da sapata inferior</a></li>
     <li><a href="#" onclick="abrirModal('Reforma-de-cilindros-hidráulicos')">Reforma de cilindros hidráulicos</a></li>
@@ -199,35 +199,36 @@
 <script>
   function abrirModal(servico) {
     const conteudo = {
-      'sapata-inferior': `
+      `,
+      'Sapata-inferior': `
         <h3>Sapata inferior</h3>
         <p>Componente de um furo utilizado no painel compactador.</p>
         <p>Aplicação comum: Componente que se aplica em painel compactadores de caminhões coletores.</p>
       `,
-      'sapata-superior': `
-        <h3>Sapata Superior</h3>
+      'Sapata-superior': `
+        <h3>Sapata superior</h3>
         <p>Componente de dois furos utilizado no painel compactador.</p>
         <p>Aplicação: Componente que se aplica em painel compactadores de caminhões coletores.</p>
       `,
       'Fechadura-da-porta-traseira': `
         <h3>Fechadura da porta traseira</h3>
-        <p>Mecanismo de segurança para travar a porta traseira do compactador.</p>
-        <p>Uso comum: Componente utilizado para travar o painel traseiro do compactador.</p>
+        <p>Mecanismo de segurança para travar a porta traseira de um compactador.</p>
+        <p>Uso comum: Componente utilizado para travar o painel traseiro de um compactador.</p>
       `,
-      'Kit-de-vedação-do-cilindro': `
-        <h3>Kit de vedação do cilindro</h3>
+      'Kit-de-vedação-para-cilindro': `
+        <h3>Kit de vedação para cilindro</h3>
         <p> Componente de vedação, para vedar o óleo no sistema hidráulico</p>
         <p>Uso comum: Cilindros Hidráulicos, macacos e prensas.</p>
       `,
       'Pino-da-sapata-superior': `
         <h3>Pino da sapata superior</h3>
         <p>Componente pino de aço temperado sob medida de acordo com cada compactador.</p>
-        <p>Uso comum: Componente utilizado na fixação da sapata de dois (2) furos.</p>
+        <p>Uso comum: Componente utilizado na fixação da sapata de dois furos.</p>
       `,
       'Pino-da-sapata-inferior': `
         <h3>Pino da sapata inferior</h3>
         <p>Componente pino de aço temperado sob medida de acordo com cada compactador.</p>
-        <p>Uso comum: Componente utilizado na fixação da sapata de um (1) furo.</p>
+        <p>Uso comum: Componente utilizado na fixação da sapata de um furo.</p>
       `
       'Reforma-de-cilindros-hidráulicos': `
         <h3>Reforma de cilindros hidráulicos</h3>
@@ -236,10 +237,10 @@
       `,
       'Fabricação-de-peças-usinadas': `
         <h3>Fabricação de peças usinadas</h3>
-        <p>A fabricação é realizada com as amostras ou desenho.</p>
+        <p>A fabricação é realizada com a amostras ou desenho.</p>
         <p>Uso comum: Pinos, buchas, engrenagens, mancais...</p>
       `,
-      'Trava-da-porta-compactador-mikrol': `
+      'Trava-da-porta-compactador-mikro': `
         <h3>Trava da porta compactador mikro</h3>
         <p> Trava de segurança de aço.</p>
         <p>Uso comum: Utilizado no compactador mikro (direito e esquerdo).</p>
@@ -253,7 +254,7 @@
         <h3>Base da sapata</h3>
         <p>Componente feito com nylon. Medida: 25x80x300</p>
         <p>Uso comum: Utilizado na sapata superior/inferior.</p>
-      `
+      `,
       // Você pode adicionar mais aqui
     };
 
