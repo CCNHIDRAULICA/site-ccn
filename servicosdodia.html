@@ -46,19 +46,28 @@
       margin-bottom: 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+    .galeria-servico {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin 20px 0;
+    }
     .foto-servico {
-    width: 250px;     
+    width: 45%;     
     height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba (0,0,0,0.1);
     display: block;
     margin: 10px auto;
     border-radius: 4px; 
-  }
+    }
     footer {
   background-color: #f2f2f2;
   color: #333;
   text-align: center;
   padding: 20px;
-}
+    }
     h1, h2 {
       color: #222;
     }
@@ -119,7 +128,8 @@
     <strong>Serviço:</strong> Cilindro hidraulico. O serviço de hoje vai viajar diretamente para valinhos. ✈️ <br>
     <strong>Status:</strong> ✅Entregue!<br><br>
     
-  <img src="imagem1.jpg" alt="Foto do serviço" class="foto-servico"><br><br> 
+  <div class+"galeria-servico">
+  <img src="imagem1.jpg" alt="Foto do serviço" class="foto-servico"><br><br>
   <img src="imagem2.jpg" alt="Foto do serviço" class="foto-servico"><br><br>
   </div>
 
