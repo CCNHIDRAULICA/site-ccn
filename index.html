@@ -4,7 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CCN Hidráulica & Usinagem</title>
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17311915784"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-17311915784');
+</script>
+  
   <!-- Lightbox2 CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 
@@ -313,21 +323,28 @@
   <p><strong>WhatsApp:</strong> (11) 2956-0920</p>
   <p><strong>Email:</strong> contato@ccnhidraulicausinagem.com.br</p>
 
-  <form action="https://formspree.io/f/mnnvrpoj" method="POST">
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome" required><br><br>
+ <form id="contato-form" action="https://formspree.io/f/mnnvrpoj" method="POST">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" required><br><br>
+  <!-- ... outros campos ... -->
+  <button type="submit">Enviar</button>
+</form>
 
-    <label for="email">E-mail:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+<script>
+  const form = document.getElementById("contato-form");
 
-    <label for="telefone">Telefone:</label><br>
-    <input type="tel" id="telefone" name="telefone"><br><br>
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio imediato
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17311915784/cihMCKSEmfIaEIi--75A'
+    });
 
-    <label for="mensagem">Mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
-
-    <button type="submit">Enviar</button>
-  </form>
+    // Aguarda 100ms para garantir que o evento seja enviado
+    setTimeout(() => {
+      form.submit(); // Envia o formulário normalmente
+    }, 100);
+  });
+</script>
 </section>
 
 <a class="whatsapp" href="https://wa.me/551129560920?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20CCN%20Hidráulica%20e%20Usinagem." target="_blank">WhatsApp</a>
